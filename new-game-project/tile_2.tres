@@ -1,0 +1,35 @@
+[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://b5ha1kv3bk0p8"]
+
+[ext_resource type="Texture2D" uid="uid://spol2gg6j320" path="res://sprites/wall.aseprite" id="1_kmoc0"]
+[ext_resource type="Texture2D" uid="uid://cac2i85ensras" path="res://sprites/player.aseprite" id="2_p6aj0"]
+[ext_resource type="Texture2D" uid="uid://ds000j6tdqy4k" path="res://sprites/portail_2.aseprite" id="3_p6aj0"]
+[ext_resource type="Texture2D" uid="uid://b5br5gtfthl3l" path="res://sprites/portail_1.aseprite" id="3_ys038"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ir8iy"]
+texture = ExtResource("1_kmoc0")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hqns4"]
+texture = ExtResource("2_p6aj0")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p6aj0"]
+texture = ExtResource("3_p6aj0")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ys038"]
+texture = ExtResource("3_ys038")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+custom_data_layer_0/name = "portal_id"
+custom_data_layer_0/type = 2
+sources/0 = SubResource("TileSetAtlasSource_ir8iy")
+sources/1 = SubResource("TileSetAtlasSource_hqns4")
+sources/5 = SubResource("TileSetAtlasSource_p6aj0")
+sources/6 = SubResource("TileSetAtlasSource_ys038")
